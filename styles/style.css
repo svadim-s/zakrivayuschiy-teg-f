@@ -24,6 +24,7 @@
   background-attachment: fixed;
   font-family: var(--font-fm-main);
   font-size: var(--font-size);
+  font-variation-settings: 'wght' var(--font-weight-text);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -34,7 +35,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 2px solid #000;
   background-color: var(--bg-color);
   border: 2px solid var(--border-color);
   color: var(--text-color);
@@ -137,7 +137,7 @@
 }
 
 .card__title {
-  font-weight: 700;
+  font-variation-settings: 'wght' var(--font-weight-title);
   font-size: var(--font-size);
   line-height: 21.78px;
   padding: 5px 12px;
@@ -162,7 +162,6 @@
   inset-block-start: 25px;
   color: var(--text-color);
   font-family: var(--font-fm-accent);
-  font-weight: 400;
   font-size: 14px;
   mix-blend-mode: hard-light;
   text-shadow: -1px 0 var(--text-stroke-color), 0 1px var(--text-stroke-color), 1px 0 var(--text-stroke-color), 0 -1px var(--text-stroke-color);
@@ -170,7 +169,7 @@
 }
 
 .image__filter-1 {
-  filter: saturate(30%);
+  filter: grayscale(0.7);
 }
 
 .image__filter-2 {
@@ -210,7 +209,6 @@
 
 .card__text {
   line-height: 21px;
-  font-weight: 400;
   font-size: var(--font-size);
 }
 
@@ -228,7 +226,7 @@
   background-color: var(--bg-color);
   font-family: var(--font-fm-accent);
   font-size: 14px;
-  font-weight: 400;
+  font-variation-settings: 'wght' var(--font-weight-text);
   line-height: 12.60px;
   position: relative;
   overflow: hidden;
@@ -390,9 +388,14 @@
 
 dialog::backdrop {
   background-color: rgb(0 0 0 / 0.75);
-} 
+}
+
+.modal[open] {
+  display: flex;
+}
 
 .modal {
+  display: none;
   max-width: 353px;
   background-color: var(--bg-color);
   color: var(--text-color);
@@ -423,7 +426,6 @@ dialog::backdrop {
   font-family: var(--font-fm-accent);
   text-transform: uppercase;
   font-size: 14px;
-  font-weight: 400;
   line-height: 21px;
 }
 

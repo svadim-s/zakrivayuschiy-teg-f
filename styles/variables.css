@@ -3,6 +3,8 @@
   --font-fm-main: 'Inter', sans-serif;
   --font-fm-accent: 'PressStart2P', cursive;
   --font-size: 18px;
+  --font-weight-text: 400;
+  --font-weight-title: 700;
   --text-color: #000;
   --border-color: #000;
   --text-stroke-color: #000;
