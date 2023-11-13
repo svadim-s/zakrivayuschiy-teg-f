@@ -36,7 +36,7 @@
   from {
     transform: scale(1);
   }
-  
+
   to {
     transform: scale(1.5);
   }
@@ -106,7 +106,7 @@
 
 .like-icon .main-body {
   fill: transparent;
-  transition: fill 0.1s linear;
+  transition: fill 0.3s linear;
 }
 
 .like-icon .core {
